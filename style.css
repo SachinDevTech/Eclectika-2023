@@ -11,39 +11,25 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   color: #5f5f5f;
-  /* background-color: #121212; */
-  /* background-image:url('\Images\backgrnd3.jpg'); */
-
 }
 
 .navbar {
-  background: rgba(2, 2, 2, 0.92);
+  background: #1B1B1Bba;
   padding: auto 45px 0px;
-  cursor: pointer;
-  /* cursor: zoom-in; */
-  cursor: crosshair;
   justify-content: space-around;
-}
-
-.bg-custom-2 {
-  background-image: linear-gradient(20deg, #296073 0%, #005B44 50%, #4E8397 100%);
-
 }
 
 .navbarimg {
   padding-left: 60px;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .navbarimg:hover {
-  /* transition: 1s; */
-  height: 50px;
-  cursor: progress;
-
+  transform: scale(1.2);
+  cursor: pointer;
 }
-
 
 .collapse {
   padding-right: 80px;
@@ -57,9 +43,34 @@ body {
   color: #fff;
 }
 
-
 .active {
   margin-left: 1.5rem;
+}
+
+.itemcolordd {
+  color: rgb(255, 255, 255);
+  font-family: "Stick No Bills", sans-serif;
+}
+
+.how1,
+.how2 {
+  font-weight: 900;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 1.1011rem;
+}
+
+@media (max-width: 988px) {
+  a.how1 {
+    display: inline-block;
+    width: 16%;
+  }
+}
+
+@media (max-width: 988px) {
+  a.how2 {
+    display: inline-block;
+    width: 25%;
+  }
 }
 
 a.aforhover {
@@ -67,136 +78,51 @@ a.aforhover {
   text-decoration: none;
   padding: 5px;
   letter-spacing: 0.2px;
-
-  font-family: 'Stick No Bills',
-    sans-serif;
+  font-family: "Stick No Bills", sans-serif;
   font-weight: 600;
+  color: #fff;
   /* z-index: 2; */
 }
-
-.itemcolordd {
-  color: rgb(255, 255, 255);
-  font-family: 'Stick No Bills',
-    sans-serif;
+a.aforhover:hover {
+  color: #fff;
 }
-
-
-.how1,
-.how2 {
-  font-weight: 900;
-  font-family: 'Stick No Bills',
-    sans-serif;
-  font-size: 1.1011rem;
-}
-
-
-
-@media(max-width:988px) {
-  a.how1 {
-    display: inline-block;
-    width: 16%;
-  }
-}
-
-@media(max-width:988px) {
-  a.how2 {
-    display: inline-block;
-    width: 25%;
-  }
-}
-
 a.aforhover:after {
   content: "";
   position: absolute;
-  background-color: #a5b0ae;
-  height: 3.2px;
+  background-color: #dcdcdc;
+  height: 3px;
   width: 0;
   left: 0;
-  bottom: -5px;
+  bottom: -1px;
   transition: 0.25s;
-  /* z-index: 1; */
+  color: #fff;
 }
 
 a.aforhover:hover:after {
   width: 100%;
+  color: #fff;
 }
 
 a:hover {
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-weight: 500;
 }
-
-
 
 .hr1 {
   width: 88.5%;
   height: 2px;
   background-color: #737373;
   margin: auto;
-
 }
 
 .navbar-brand img {
-  height: 2.4rem;
+  height: 38px;
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&family=Archivo:wght@400;500;600&family=Barlow+Condensed&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bree+Serif&family=Caveat:wght@400;500;600;700&family=Changa:wght@400;500&family=Dancing+Script:wght@400;500;600;700&family=Kanit&family=Lato:ital,wght@0,400;1,300&family=Montserrat:wght@100&family=Nabla&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Poor+Story&family=Rubik+Bubbles&family=Sacramento&family=Stick+No+Bills:wght@200;300;400;500&family=Ubuntu&display=swap');
-
-/* ---------------- FONT FAMILIES ----------------- */
-
-/* font-family: 'Akshar',
-sans-serif;
-font-family: 'Anek Devanagari',
-sans-serif;
-font-family: 'Archivo',
-sans-serif;
-font-family: 'Barlow',
-sans-serif;
-font-family: 'Barlow Condensed',
-sans-serif;
-font-family: 'Bebas Neue',
-cursive;
-font-family: 'Bree Serif',
-serif;
-font-family: 'Caveat',
-cursive;
-font-family: 'Changa',
-sans-serif;
-font-family: 'Dancing Script',
-cursive;
-font-family: 'Kanit',
-sans-serif;
-font-family: 'Lato',
-sans-serif;
-font-family: 'Montserrat',
-sans-serif;
-font-family: 'Nabla',
-cursive;
-font-family: 'Noto Nastaliq Urdu',
-serif;
-font-family: 'Noto Serif Devanagari',
-serif;
-font-family: 'Orbitron',
-sans-serif;
-font-family: 'Poor Story',
-cursive;
-font-family: 'Rubik Bubbles',
-cursive;
-font-family: 'Sacramento',
-cursive;
-font-family: 'Stick No Bills',
-sans-serif;
-font-family: 'Ubuntu',
-sans-serif; */
-
-
 
 .brandname {
   /* font-family: 'orbitron'; */
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
-
 
 /* -------------------Video css starts from here-------------------- */
 
@@ -214,7 +140,6 @@ sans-serif; */
   background-size: auto;
 }
 
-
 .ABOUTCENTERING {
   text-align: center;
   justify-content: center;
@@ -224,10 +149,7 @@ sans-serif; */
   padding-bottom: 1rem;
   font-size: 350%;
   background-image: url("https://wallpaperaccess.com/full/1288325.jpg");
-
-
 }
-
 
 .gallerysubtitle {
   background-image: url("https://wallpaperaccess.com/full/1288325.jpg");
@@ -240,8 +162,6 @@ sans-serif; */
   font-weight: 300;
   color: #b8b8b8;
   padding-bottom: 2rem;
-
-
 }
 
 /* ---------------------------------------------------------------------- */
@@ -254,7 +174,7 @@ sans-serif; */
   text-align: center;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .caption {
     top: 50%;
     transition: 1s;
@@ -265,20 +185,20 @@ sans-serif; */
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 15%;
-  text-shadow: .1rem .1rem .8rem black;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
   padding-bottom: 1rem;
   /* letter-spacing: 50%; */
 }
 
 .caption h3 {
   font-size: 2rem;
-  text-shadow: .1rem .1rem .5rem black;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
   padding-bottom: 1.6rem;
 }
 
 .subtitle {
   text-align: center;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 1.37rem;
   /* font-optical-sizing: auto; */
   font-weight: 300;
@@ -305,12 +225,12 @@ sans-serif; */
 .btn-secondary {
   border-width: medium;
   border-radius: 0;
-  padding: .6rem 1.2rem;
+  padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 1rem;
-  border-color: #1EBBA3;
-  background-color: #1EBBA3;
+  border-color: #1ebba3;
+  background-color: #1ebba3;
   color: white;
 }
 
@@ -325,12 +245,12 @@ sans-serif; */
   .caption h1 {
     font-size: 3rem;
     font-weight: 700;
-    letter-spacing: .15rem;
-    text-shadow: .1rem .1rem .8rem black;
-    padding-bottom: .5rem;
+    letter-spacing: 0.15rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+    padding-bottom: 0.5rem;
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     .subtitle {
       font-size: 1rem;
     }
@@ -359,7 +279,6 @@ sans-serif; */
 /* ------------------------------------------ */
 
 .aboveabout {
-
   color: rgb(255, 255, 255);
   padding-top: 1.2rem;
   padding-bottom: 1rem;
@@ -370,7 +289,6 @@ sans-serif; */
   margin: 0;
   padding: 0;
   background-color: aliceblue;
-
 }
 
 .hr3 {
@@ -378,16 +296,13 @@ sans-serif; */
   margin: 0;
   padding: 0;
   background-color: aliceblue;
-
 }
 
 .hr33 {
-
   margin: 0;
   padding: 0;
   margin-bottom: 3rem;
   background-color: aliceblue;
-
 }
 
 .hr333 {
@@ -402,8 +317,7 @@ sans-serif; */
   font-size: 2.6vh, 2.6vw;
   color: #cccccc;
   background-color: rgb(18, 18, 18, 0.7);
-  font-family: 'Archivo',
-    sans-serif;
+  font-family: "Archivo", sans-serif;
 }
 
 .paragraphforaboutus:hover {
@@ -411,14 +325,13 @@ sans-serif; */
   transition: 0.2s;
 }
 
-@media(max-width: 994px) {
+@media (max-width: 994px) {
   .hoverforpara {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     background-color: rgb(13, 62, 33, 0.8);
   }
 }
-
 
 .imgabout {
   width: 75%;
@@ -437,14 +350,11 @@ sans-serif; */
   border-radius: 80px;
 }
 
-@media(max-width: 769px) {
+@media (max-width: 769px) {
   .imgabout {
     padding-right: 4%;
   }
 }
-
-
-
 
 .gallerysection {
   margin-top: 4rem;
@@ -456,8 +366,6 @@ sans-serif; */
   text-align: center;
   width: fit-content;
   margin-bottom: 5rem;
-
-
 }
 
 .imageadjust {
@@ -477,11 +385,8 @@ sans-serif; */
 
 .loader:hover {
   background: #03e9f4;
-  box-shadow: 0 0 5px #03e9f4,
-    0 0 25px #03e9f4,
-    0 0 50px #03e9f4,
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
     0 0 200px #03e9f4;
-
 }
 
 .loader span {
@@ -497,7 +402,6 @@ sans-serif; */
   background: linear-gradient(90deg, transparent, #03e9f4);
   animation: animate1 1s linear infinite;
   animation-delay: 0s;
-
 }
 
 @keyframes animate1 {
@@ -512,16 +416,13 @@ sans-serif; */
 
 .bgexploremore {
   background-image: url("https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGdyZWVuJTIwYmFja2dyb3VuZCUyMGJ5JTIwYWJkdWxsYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
-
 }
 
 .bgaboutuscontent {
   padding-top: 2.5rem;
   padding-bottom: 2rem;
   background-image: url("https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-
 }
-
 
 .loader span:nth-child(3) {
   bottom: 0;
@@ -531,7 +432,6 @@ sans-serif; */
   background: linear-gradient(270deg, transparent, #03e9f4);
   animation: animate3 1s linear infinite;
   animation-delay: 0s;
-
 }
 
 @keyframes animate3 {
@@ -552,7 +452,6 @@ sans-serif; */
   background: linear-gradient(100deg, transparent, #03e9f4);
   animation: animate2 1s linear infinite;
   animation-delay: 0.5s;
-
 }
 
 @keyframes animate2 {
@@ -573,7 +472,6 @@ sans-serif; */
   background: linear-gradient(0deg, transparent, #03e9f4);
   animation: animate4 1s linear infinite;
   animation-delay: 0.5s;
-
 }
 
 @keyframes animate4 {
@@ -587,7 +485,6 @@ sans-serif; */
 }
 
 .bgforfooter {
-
   background-image: url("https://wallpaperaccess.com/full/1288325.jpg");
   width: 100%;
   padding-top: 2rem;
@@ -595,15 +492,13 @@ sans-serif; */
 
 .bottom-container {
   border: #686a6b solid;
-  border-width: .1rem;
+  border-width: 0.1rem;
   background-color: #121212;
   padding-top: 2rem;
-
 }
 
-
 .bott {
-  font-family: 'Poor Story', cursive;
+  font-family: "Poor Story", cursive;
   color: #92acac;
   font-size: 1rem;
   padding-top: 2%;
@@ -617,7 +512,6 @@ p.bott:hover {
 
 /* ------------Carousel code---------------- */
 
-
 .sectionforevents {
   background: url("/images/bgforgallery.jpg") no-repeat center;
   background-size: cover !important;
@@ -625,13 +519,11 @@ p.bott:hover {
   /* padding-left: 0; */
 
   padding: 5% 12% 10% 10%;
-
 }
 
 .carousel-indicators {
   left: 1rem;
   /* right: 1rem; */
-
 }
 
 .carousel-control-prev {
@@ -645,11 +537,9 @@ p.bott:hover {
   text-align: center;
   place-items: center;
   transition: 0.3s;
-
 }
 
 .h3bgforevents:hover {
-
   transition: 0.2s;
   background-color: rgb(69, 82, 75);
   border-radius: 2px;
@@ -662,11 +552,9 @@ p.bott:hover {
   margin-left: -1.5rem;
 }
 
-
-
 /* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&family=Archivo:wght@400;500;600&family=Barlow+Condensed&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bree+Serif&family=Caveat:wght@400;500;600;700&family=Changa:wght@400;500&family=Dancing+Script:wght@400;500;600;700&family=Kanit&family=Lato:ital,wght@0,400;1,300&family=Montserrat:wght@100&family=Nabla&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Poor+Story&family=Rubik+Bubbles&family=Sacramento&family=Stick+No+Bills:wght@200;300;400;500&family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&family=Archivo:wght@400;500;600&family=Barlow+Condensed&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bree+Serif&family=Caveat:wght@400;500;600;700&family=Changa:wght@400;500&family=Dancing+Script:wght@400;500;600;700&family=Kanit&family=Lato:ital,wght@0,400;1,300&family=Montserrat:wght@100&family=Nabla&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Poor+Story&family=Rubik+Bubbles&family=Sacramento&family=Stick+No+Bills:wght@200;300;400;500&family=Ubuntu&display=swap");
 
 .container {
   width: 85%;
@@ -675,9 +563,7 @@ p.bott:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin-top: 1rem;
   margin-bottom: 2.5rem;
-
 }
-
 
 .container .content {
   display: flex;
@@ -696,7 +582,7 @@ p.bott:hover {
 }
 
 .content .left-side::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 70%;
   width: 2px;
@@ -709,7 +595,6 @@ p.bott:hover {
 .content .left-side .details {
   margin: 14px;
   text-align: center;
-
 }
 
 .content .left-side .details i {
@@ -733,7 +618,6 @@ p.bott:hover {
   width: 75%;
   margin-left: 75px;
   /* padding-top: 2rem; */
-
 }
 
 .content .right-side .topic-text {
@@ -760,7 +644,7 @@ p.bott:hover {
   border: none;
   outline: none;
   font-size: 16px;
-  background: #F0F1F8;
+  background: #f0f1f8;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
@@ -847,9 +731,7 @@ p.bott:hover {
   /* padding-right: 4rem; */
   padding-left: 39%;
   background-size: cover;
-
 }
-
 
 .divforbtn {
   position: relative;
@@ -861,21 +743,20 @@ p.bott:hover {
   margin-left: -23%;
 }
 
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .divforbtn {
     margin-right: 60%;
     /* margin-left: 56%; */
-
   }
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
   .divforbtn {
     margin-left: -62%;
   }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .divforbtn {
     margin-left: -92%;
     margin-right: 35%;
@@ -908,8 +789,7 @@ p.bott:hover {
   height: 100%;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
-
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
 }
 
 .slider1 span img {
@@ -928,15 +808,11 @@ p.bott:hover {
   transform: translateY(-50px) scale(1.2);
 }
 
-
-
-
 /* our team styling begins from here */
 /* --------------------------------------------------- */
 
 .cssforcontactus {
   padding-bottom: 3rem;
-
 }
 
 /* ---------------------------------------------- */
@@ -949,14 +825,12 @@ p.bott:hover {
   min-height: 10vh;
   transition: 0.5s;
   padding-top: 3%;
-
 }
 
 .ulforSM {
   position: relative;
   display: flex;
   padding-left: 0;
-
 }
 
 .ulforSM li {
@@ -966,9 +840,7 @@ p.bott:hover {
 .ulforSM li:hover::before {
   opacity: 0.1;
   transform: translate(-50%, calc(-50%+150px));
-
 }
-
 
 .ulforSM li a {
   position: relative;
@@ -1001,9 +873,30 @@ p.bott:hover {
 .ulforSM li a:hover.Instagram {
   /* background: #b65c6c; */
   background: #f09433;
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
@@ -1036,7 +929,6 @@ p.bott:hover {
   transition: 0.1s;
   border: 2.4px solid rgb(255, 255, 255);
 }
-
 
 /* ------------------OUR SPONSORS------------------- */
 
@@ -1075,12 +967,10 @@ p.bott:hover {
   opacity: 0;
   transition: 0.5s ease;
   background-color: rgba(196, 103, 103, 0.333);
-
 }
 
 .thumbnail:hover {
   transform: translateY(-4px);
-
 }
 
 .img-container11 {
@@ -1096,7 +986,6 @@ p.bott:hover {
   margin: auto;
   transition: 0.1s;
   display: inline-block;
-
 }
 
 .containerforvideo:hover {
@@ -1120,14 +1009,13 @@ p.bott:hover {
   text-align: center;
 }
 
-@media(max-width: 994px) {
+@media (max-width: 994px) {
   .centeringmapvideo {
     padding-bottom: 4%;
   }
 }
 
-
-@media(max-width:375px) {
+@media (max-width: 375px) {
   .centeringmapvideo {
     margin-right: 2%;
   }

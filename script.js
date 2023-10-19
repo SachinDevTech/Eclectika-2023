@@ -1,0 +1,1 @@
+// I have written all the css in the same html file to load it faster
