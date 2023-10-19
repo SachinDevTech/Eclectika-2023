@@ -513,7 +513,7 @@ p.bott:hover {
 /* ------------Carousel code---------------- */
 
 .sectionforevents {
-  background: url("/images/bgforgallery.jpg") no-repeat center;
+  background: url("./images/bgforgallery.jpg") no-repeat center;
   background-size: cover !important;
 
   /* padding-left: 0; */
@@ -722,7 +722,7 @@ p.bott:hover {
 
 /* -------------------------------------------------------------------- */
 .SECT {
-  background-image: url("/images/bgforwebsite1.jpeg");
+  background-image: url("./images/bgforwebsite1.jpeg");
   height: 100vh;
   display: flex;
   align-items: center;
@@ -1021,4 +1021,4 @@ p.bott:hover {
   }
 }
 
-/* -------------------------------------------------- */
+/* ----------------------END---------------------------- */
